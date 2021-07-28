@@ -15,7 +15,7 @@ jobs:
     steps:
     - name: Build SampleJob
       run: |
-        wget --auth-no-challenge --user=admin --password=$n!kN3j http://54.221.6.255:8080/job/SampleJob/build
+        curl -X POST -L --user admin:112620f71562476991a059bc747ecf733e http://54.221.6.255:8080/job/SampleJob/build
         
   close_job:
     # this job will only run if the PR has been closed without being merged
