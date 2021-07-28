@@ -15,7 +15,7 @@ jobs:
     steps:
     - name: Build SampleJob
       run: |
-        curl -u admin:112620f71562476991a059bc747ecf733e http://54.221.6.255:8080/job/SampleJob/build?token=git-trigger
+        wget --auth-no-challenge --user=admin --pass=112620f71562476991a059bc747ecf733e http://54.221.6.255:8080/job/SampleJob/build
         
   close_job:
     # this job will only run if the PR has been closed without being merged
