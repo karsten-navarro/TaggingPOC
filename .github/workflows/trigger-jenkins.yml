@@ -1,17 +1,17 @@
 name: Trigger Jenkins Build Action
 
+# only trigger on pull request closed events
 on:
   pull_request:
     branches:
       - master
-    types: [closed]
+    types: [ closed ]
 
 jobs:
-  build:
-    name: Test Build
-    runs-on: ubuntu-latest
+  merge_job:
+    # this job will only run if the PR has been merged
     if: github.event.pull_request.merged == true
-    
+    runs-on: ubuntu-latest
     steps:
     - name: Trigger SampleJob
       uses: appleboy/jenkins-action@master
@@ -20,3 +20,11 @@ jobs:
         user: "admin"
         token: ${{ secrets.TOKEN }}
         job: "SampleJob"
+
+  close_job:
+    # this job will only run if the PR has been closed without being merged
+    if: github.event.pull_request.merged == false
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo PR #${{ github.event.number }} has been closed without being merged
