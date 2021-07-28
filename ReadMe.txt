@@ -15,4 +15,4 @@ Creating Release branch.
 Tagging this version as 1.0.0.
 
 [Kars]
-Tagging this version as feature-1.1.1.
+Tagging the version as feature-1.1.0.
