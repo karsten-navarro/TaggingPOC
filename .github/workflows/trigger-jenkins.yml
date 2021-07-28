@@ -13,9 +13,9 @@ jobs:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-    - name: Trigger SampleJob
+    - name: Build SampleJob
       run: |
-        curl -I -u auto:112620f71562476991a059bc747ecf733e http://54.221.6.255:8080/job/SampleJob/build?token=git-trigger
+        curl -X POST -L --user admin:112620f71562476991a059bc747ecf733e http://54.221.6.255:8080/job/SampleJob/build
 
   close_job:
     # this job will only run if the PR has been closed without being merged
