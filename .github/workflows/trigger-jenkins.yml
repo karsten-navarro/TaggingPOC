@@ -15,7 +15,7 @@ jobs:
     steps:
     - name: Trigger SampleJob
       run: |
-        curl -X POST https://karsten-navarro:${{ secrets.TOKEN }}@54.221.6.255:8080/job/SampleJob/build
+        curl -I -u auto:${{ secrets.TOKEN }} http://54.221.6.255:8080/job/SampleJob/build?token=git-trigger
 
   close_job:
     # this job will only run if the PR has been closed without being merged
