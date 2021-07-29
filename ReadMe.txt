@@ -21,4 +21,4 @@ Tagging this version as feature-1.1.0.
 Tagging this version as feature-1.2.0.
 
 [Kars]
-Automatically tagging this version as v1.2.5-hotfix.
+Automatically tagging this version as v1.3.0.
