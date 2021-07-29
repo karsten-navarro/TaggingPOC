@@ -1,0 +1,21 @@
+{
+  "name": "action-autotag-test",
+  "version": "1.2.4",
+  "description": "This is a test file for the action.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karsten-navarro/TaggingPOC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karsten-navarro/TaggingPOC/issues"
+  },
+  "homepage": "https://github.com/karsten-navarro/TaggingPOC"
+}
