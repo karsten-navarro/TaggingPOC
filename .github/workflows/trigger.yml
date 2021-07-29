@@ -18,7 +18,7 @@ jobs:
       with:
         GITHUB_TOKEN: "${{ secrets.GIT_TOKEN }}"
         source_file: "version.toc"
-        extraction_regex: "\\s*##\\s*Version\\s*:\\s*([\\d\\.]+)"
+        extraction_regex: "(\\d+\\.\\d+\\.\\d+)"
         tag_format: "v{version} (hotfix)"
         tag_message: "Next step is to deploy to PROD environment."
           
