@@ -27,7 +27,7 @@ jobs:
     steps:
     - name: Build SampleJob
       run: |
-        curl -X POST -L --user admin:${{ secrets.TOKEN }} http://54.221.6.255:8080/job/SampleJob/buildWithParameters/?PARAMETER=GIT_BRANCH
+        curl -X POST -L --user admin:${{ secrets.TOKEN }} http://54.221.6.255:8080/job/SampleJob/build
         
   close_job:
     # this job will only run if the PR has been closed without being merged
