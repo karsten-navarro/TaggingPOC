@@ -22,3 +22,6 @@ Tagging this version as feature-1.2.0.
 
 [Kars]
 Automatically tagging this version as v1.3.0.
+
+[Kars]
+Automatically tagging this version as v1.3.1.
