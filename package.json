@@ -1,6 +1,6 @@
 {
   "name": "action-autotag-test",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "This is a test file for the action.",
   "main": "index.js",
   "dependencies": {},
