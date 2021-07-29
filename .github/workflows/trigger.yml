@@ -1,4 +1,4 @@
-name: Trigger Jenkins Build Action
+name: Trigger Action
 
 # only trigger on pull request closed events
 on:
@@ -8,6 +8,18 @@ on:
     types: [ closed ]
 
 jobs:
+  tag:
+    # this job will only run if the PR has been merged
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: jaliborc/action-general-autotag@master
+      with:
+        GITHUB_TOKEN: "${{ secrets.GIT_TOKEN }}"
+        source_file: "version.toc"
+        extraction_regex: "\\s*##\\s*Version\\s*:\\s*([\\d\\.]+)"
+          
   merge_job:
     # this job will only run if the PR has been merged
     if: github.event.pull_request.merged == true
@@ -15,7 +27,7 @@ jobs:
     steps:
     - name: Build SampleJob
       run: |
-        curl -X POST -L --user admin:${{ secrets.TOKEN }} http://54.221.6.255:8080/job/SampleJob/buildWithParameters/?PARAMETER=GIT_BRANCH
+        curl -X POST -L --user admin:${{ secrets.TOKEN }} http://54.221.6.255:8080/job/SampleJob/build
         
   close_job:
     # this job will only run if the PR has been closed without being merged
