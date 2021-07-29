@@ -5,7 +5,7 @@
 ## Author: karsten-navarro (Karsten Navarro)
 ## X-License: GNU General Public License Version 3
 ## X-Category: Inventory
-## Version: 1.2.2
+## Version: 1.2.3
 
 ## SavedVariablesPerCharacter: 
 ## SavedVariables: 
