@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CURRENT_TAG="v1.2.3"
+CURRENT_TAG="v1.0.0"
 INT=$(grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' <<< "$CURRENT_TAG") 
 MAJOR=$(cut -d'.' -f1 <<< "$INT")
 MINOR=$(cut -d'.' -f2 <<< "$INT")
