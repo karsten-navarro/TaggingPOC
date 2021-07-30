@@ -8,5 +8,23 @@ Creating Feature branch.
 [Kars]
 Creating Develop branch.
 
+[Ken]
+Creating Release branch.
+
+[Ken]
+Tagging this version as 1.0.0.
+
+[Kars]
+Tagging this version as feature-1.1.0.
+
+[Kars]
+Tagging this version as feature-1.2.0.
+
+[Kars]
+Automatically tagging this version as v1.3.0.
+
+[Kars]
+Automatically tagging this version as v1.3.1.
+
 [Kars]
 Tagging this version as v2.0.1.
