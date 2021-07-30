@@ -25,3 +25,6 @@ Automatically tagging this version as v1.3.0.
 
 [Kars]
 Automatically tagging this version as v1.3.1.
+
+[Kars]
+Tagging this version as v2.0.1.
