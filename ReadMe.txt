@@ -31,3 +31,6 @@ Tagging this version again as v2.1.0.
 
 [Kars]
 Tagging this version as v2.2.0 (develop).
+
+[Kars]
+Automatically tagging this version as v3.0.0.
