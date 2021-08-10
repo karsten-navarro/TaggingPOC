@@ -60,4 +60,7 @@ Auto-tagging this ver as v3.2.5.
 Auto-tagging this ver as v3.2.6.
 
 [Kars]
-Re-tagging this ver as v3.2.6.
+Auto-tagging this ver as v3.2.6.
+
+[Kars]
+Auto-tagging this ver as v3.2.7.
