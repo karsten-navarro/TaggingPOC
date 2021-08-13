@@ -1,4 +1,4 @@
-[Ken] 
+ver:[Ken] 
 Initializing ReadMe file for indicating points in tagging history.
 This message has been written upon repository creation.
 
@@ -76,3 +76,6 @@ Negative Scenario
 
 [Ken]
 Re-tagging this ver as v4.0.1.
+
+[Ken]
+Re-tagging this ver as v4.0.1. the second time
