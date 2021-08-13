@@ -59,5 +59,11 @@ Auto-tagging this ver as v3.2.5.
 [Ken]
 Auto-tagging this ver as v3.2.6.
 
-[KEN]
+[Kars]
+Auto-tagging this ver as v3.2.6.
+
+[Kars]
+Re-tagging this ver as v3.2.7.
+
+[Ken]
 Negative Scenario
