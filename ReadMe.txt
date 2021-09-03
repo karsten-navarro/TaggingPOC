@@ -87,4 +87,4 @@ Negative Scenario1
 Negative Scenario2
 
 [Kars]
-Atuo-tagging this version as v4.2.7
+Auto-tagging this version as v4.2.7.
